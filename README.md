@@ -83,3 +83,95 @@ java -cp out Main
 ```
 
 Register at least three requests (option 1), enqueue them (option 4), then try the queue options (5 to 8) and the sorts (9 and 10). Choose 0 to exit.
+
+## Screenshots of the System
+
+### 1. Main Menu
+![Main menu](screenshots/main_menu.png)
+
+*The main menu showing all available operations.*
+
+
+### 2. Adding and Displaying Records
+![Registering a request](screenshots/adding_record.png)
+
+*A request is registered with a student name, book title, and publication year. The system assigns Request No. 1001.*
+
+
+![Record table](screenshots/record_table.png)
+
+*All stored records with their request number, student, book title, year, and status.*
+
+
+### 3. Searching for a Request
+![Search by student name](screenshots/search.png)
+
+*Searching by student name returns the matching records, and partial names are accepted.*
+
+
+### 4. Queue Operations
+![Enqueue 1001](screenshots/enqueue_1.png)
+![Enqueue 1003](screenshots/Enqueue_2.png)
+![Enqueue 1002](screenshots/enqueue_3.png)
+
+*Requests are enqueued in the order 1001, 1003, 1002. The system reports each one's queue position.*
+
+
+![Current queue](screenshots/current_queue.png)
+
+*Display queue shows all three requests from front to back.*
+
+
+![Peek](screenshots/next_queued.png)
+
+*Peek shows the next request (1001) without removing it.*
+
+
+![Dequeue](screenshots/processing_queue.png)
+
+*Process next removes the front request (1001) and marks it Processed.*
+
+
+![Queue after dequeue](screenshots/after_process.png)
+
+*The queue now holds only 1003 and 1002.*
+
+
+### 5. FIFO Behavior
+![Process 1003](screenshots/after_process_2.png)
+![Process 1002](screenshots/after_process_3.png)
+
+*Requests were enqueued as 1001, 1003, 1002 and processed in that exact order, so the first request added is the first processed.*
+
+
+### 6. Bubble Sort (Algorithm 1)
+![Bubble Sort](screenshots/sorting_alg.png)
+
+*Records before and after Bubble Sort by student name. The queue order is unchanged.*
+
+
+### 7. Insertion Sort (Algorithm 2)
+![Insertion Sort](screenshots/sorting_alg_2.png)
+
+*Records before and after Insertion Sort by request number. The queue order is unchanged.*
+
+
+### 8. Input Validation and Error Messages
+![Invalid menu input](screenshots/validation_menu.png)
+
+*Non-numeric, out-of-range, and blank menu entries are rejected and the program prompts again.*
+
+
+![Invalid fields](screenshots/validation_fields.png)
+
+*Blank names and titles, a non numeric year, and an out of range year are all rejected.*
+
+
+![Empty queue](screenshots/validation_empty.png)
+
+*Processing an empty queue displays a clear message.*
+
+
+![Request not found](screenshots/validation_empty_2.png)
+
+*Searching for a nonexistent request number displays a not found message.*
