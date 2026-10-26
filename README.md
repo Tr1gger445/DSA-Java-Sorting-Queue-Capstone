@@ -1,1 +1,3 @@
-IT Help Desk Ticketing System for Captsone Project
+# Library Borrowing Request System
+
+## Project Description
